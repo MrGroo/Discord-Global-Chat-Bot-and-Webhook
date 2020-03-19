@@ -2,4 +2,4 @@
 ## ``node index.js``
 
 Got to index.js and add Ur token
-Go to modules/global chat and add webhook token and channel id
+Go to modules/global chat.js and add webhook token and channel id
