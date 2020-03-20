@@ -1,0 +1,15 @@
+{
+  "name": "global-chat",
+  "version": "1.0.0",
+  "description": "Łączenie czatów z dwóch serwerów discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "ocean",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  }
+}
