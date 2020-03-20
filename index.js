@@ -16,5 +16,11 @@ fs.readdir(`./modules/`, (err, files) => {
 client.on('ready', () =>{
   console.log("online")
 })
+client.on('warn', () =>{
+    console.log("warn")
+})
+client.on('error', () =>{
+    console.log("error")
+})
 
 client.login(process.env.TOKEN);
