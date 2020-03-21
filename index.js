@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const client = new Discord.Client();
 
-let webhook = [process.env.WEBHOOK1, process.env.WEBHOOK2, process.env.WEBHOOK3, process.env.WEBHOOK4]
+let webhook = [process.env.WEBHOOKCHANNELS, process.env.WEBOOKIDS, process.env.WEBHOOKTOKENS]
 
 fs.readdir(`./modules/`, (err, files) => {
     if (err) console.log(err);
