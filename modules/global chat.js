@@ -48,7 +48,6 @@ exports.run = async (client, webhook) => {
             if(message.content.includes('@here')) return
 
             if(message.author.id=="594036187950219282") return
-            if(message.author.id=="538097970147754015") return
             if(message.author.id=="670569489649238041") return
             if(message.author.id=="584140317721231391") return
 
