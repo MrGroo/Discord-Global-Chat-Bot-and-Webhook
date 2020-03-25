@@ -7,7 +7,7 @@ exports.run = async (client, webhook) => {
               webhookClient.send(`${msg.content}`, {
                   username: `${msg.author.tag} (${msg.author.id})`,
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
-                  tts: true
+                  tts: false
               });
           }
           else{
@@ -15,7 +15,7 @@ exports.run = async (client, webhook) => {
                   username: `${msg.author.tag} (${msg.author.id})`,
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
                   files: [files],
-                  tts: true
+                  tts: false
               });
           }
     }
