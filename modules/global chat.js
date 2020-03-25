@@ -6,14 +6,16 @@ exports.run = async (client, webhook) => {
         if(files == ""){
               webhookClient.send(`${msg.content}`, {
                   username: `${msg.author.tag} (${msg.author.id})`,
-                  avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`
+                  avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
+                  tts: true
               });
           }
           else{
               webhookClient.send(`${msg.content}`, {
                   username: `${msg.author.tag} (${msg.author.id})`,
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
-                  files: [files]
+                  files: [files],
+                  tts: true
               });
           }
     }
