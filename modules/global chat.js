@@ -50,6 +50,7 @@ exports.run = async (client, webhook) => {
             if(message.content.includes('@here')) return
             if(message.content.includes('discord') && (message.content.includes('invite')||message.content.includes('.gg'))) return
 
+            if(message.author.id=="565210495293063179") return
             if(message.author.id=="594036187950219282") return
             if(message.author.id=="670569489649238041") return
             if(message.author.id=="584140317721231391") return
