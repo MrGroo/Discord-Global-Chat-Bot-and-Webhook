@@ -48,7 +48,7 @@ exports.run = async (client, webhook) => {
             message.delete()
             if(message.content.includes('@everyone')) return
             if(message.content.includes('@here')) return
-            if(message.content.includes('discord') && message.content.includes('invite')) return
+            if(message.content.includes('discord') && (message.content.includes('invite')||message.content.includes('.gg'))) return
 
             if(message.author.id=="594036187950219282") return
             if(message.author.id=="670569489649238041") return
