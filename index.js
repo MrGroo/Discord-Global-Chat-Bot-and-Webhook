@@ -5,6 +5,10 @@ const client = new Discord.Client();
 
 let webhook = [process.env.WEBHOOKCHANNELS, process.env.WEBOOKIDS, process.env.WEBHOOKTOKENS]
 
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
+client.events = new Discord.Collection();
+
 fs.readdir(`./modules/`, (err, files) => {
     if (err) console.log(err);
     files.forEach(file => {
