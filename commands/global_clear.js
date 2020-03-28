@@ -5,5 +5,6 @@ exports.run = async (client, message, args, prefix, env) => {
     env.split(`, `).forEach(c=>{
       client.channels.cache.get(c).bulkDelete(args[0])
   })
+  message.channel.send(`${args.join("\n")} Wiadomości poszły na spacer`)
   message.channel.send(`${args[0]} Wiadomości poszły na spacer`)
 }
