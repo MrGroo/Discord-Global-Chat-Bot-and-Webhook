@@ -59,7 +59,6 @@ exports.run = async (client, webhook) => {
             if(message.author.id=="594036187950219282") return
             if(message.author.id=="670569489649238041") return
             if(message.author.id=="584140317721231391") return
-            if(message.author.id=="611472516808048640") return
 
           let i = 0
           
