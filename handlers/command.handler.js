@@ -9,7 +9,7 @@ exports.run = async (client, env) => {
 
         if (!message.content.startsWith(prefix)) return;
 
-        const args = message.content.slice(prefix.length).trim().split(/ +/g);
+        const args = message.content.split(" ");
         const command = args.shift().toLowerCase();
         const cmd = client.commands.get(command);
     
