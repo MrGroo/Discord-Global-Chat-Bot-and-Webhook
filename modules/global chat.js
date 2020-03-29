@@ -50,10 +50,12 @@ exports.run = async (client, webhook) => {
             if(message.content.includes('@here')) return
             if(message.content.includes('discord') && (message.content.includes('invite')||message.content.includes('.gg'))) return
 
-            //351751548662972417
+            const channel = client.guilds.cache.get("561942508968345610").channels.cache.find(chan => chan.name === message.author.id);
+            if(channel) return
+
             if(message.author.id=="559075637327953934") return
             if(message.author.id=="452105736948809738") return
-            //
+            
             if(message.author.id=="351751548662972417") return
             if(message.author.id=="534079519028412417") return
             if(message.author.id=="559075637327953934") return
