@@ -13,7 +13,7 @@ fs.readdir(`./modules/`, (err, files) => {
     if (err) console.log(err);
     files.forEach(file => {
         let eventFunc = require(`./modules/${file}`);
-        eventFunc.run(client, webhook);
+        eventFunc.run(client, process.env);
     });
 });
 fs.readdir("./commands/", (err, files) => {
