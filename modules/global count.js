@@ -43,9 +43,6 @@ exports.run = async (client, env) => {
             l = l.substring(21, l.length-2)
             if(!(message.content==l)) return 
             client.guilds.cache.get("561942508968345610").channels.cache.get("693566707012468748").setTopic(`Następna liczba to **${Number(l)+1}**`).then(updated => {console.log(`Channel's new topic is ${updated.topic}`)
-              ChanneIDs.forEach(ch=>{
-                  client.channels.cache.get(ch).setTopic(`Następna liczba to **${Number(l)+1}**`)
-                })
               let i = 0
               WebhookIDs.forEach(w =>{
                 let WebhooksClient = new Discord.WebhookClient(w, WebhookTokens[i]);
