@@ -47,7 +47,7 @@ exports.run = async (client, env) => {
               let i = 0
               WebhookIDs.forEach(w =>{
                 let WebhooksClient = new Discord.WebhookClient(w, WebhookTokens[i]);
-                webhooksend(message, WebhooksClient, url)
+                webhooksend(message, WebhooksClient)
                 i++
               })
             })
