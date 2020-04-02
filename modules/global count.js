@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 exports.run = async (client, env) => {
   
-    function webhooksend(msg, webhookClient, files) {
+    function webhooksend(msg, webhookClient) {
       webhookClient.send(`${msg.content}`, {
         username: `${msg.author.tag} (${msg.author.id})`,
         avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`
