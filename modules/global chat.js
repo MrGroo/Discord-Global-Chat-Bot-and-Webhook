@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-exports.run = async (client, webhook) => {
+exports.run = async (client, env) => {
   
     function webhooksend(msg, webhookClient, files) {
         if(files == ""){
@@ -31,7 +31,8 @@ exports.run = async (client, webhook) => {
         });
       
         //690524863592661002
-      
+        let webhook = [env.WEBHOOKCHANNELS, env.WEBOOKIDS, env.WEBHOOKTOKENS]
+
         let ChanneIDs = webhook[0].split(", ")
         let WebhookIDs = webhook[1].split(", ")
         let WebhookTokens = webhook[2].split(", ")

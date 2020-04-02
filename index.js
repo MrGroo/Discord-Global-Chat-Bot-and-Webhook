@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const client = new Discord.Client();
 
-let webhook = [process.env.WEBHOOKCHANNELS, process.env.WEBOOKIDS, process.env.WEBHOOKTOKENS]
+
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -33,7 +33,7 @@ folders.forEach(folder =>{
       if (err) console.log(err);
       files.forEach(file => {
           let eventFunc = require(`./handlers/${folder}/${file}`);
-          eventFunc.run(client, process.env.WEBHOOKCHANNELS);
+          eventFunc.run(client, process.env);
       });
   });
 })
