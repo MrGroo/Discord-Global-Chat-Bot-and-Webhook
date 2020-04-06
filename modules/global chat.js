@@ -4,7 +4,7 @@ exports.run = async (client, env) => {
   
     function webhooksend(msg, webhookClient, files) {
         if(files == ""){
-              webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@!494386855974928386>`,`może morze jak ocean`)}`, {
+              webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@`,`ping -`)}`, {
                   username: `${msg.author.tag} (${msg.author.id})`,
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
                   tts: false
