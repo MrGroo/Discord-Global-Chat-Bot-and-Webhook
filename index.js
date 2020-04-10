@@ -47,5 +47,5 @@ client.on('warn', () =>{
 client.on('error', () =>{
     console.log("error")
 })
-
+//console.log(process.env)
 client.login(process.env.TOKEN);

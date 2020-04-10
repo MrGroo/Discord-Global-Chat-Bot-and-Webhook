@@ -10,7 +10,7 @@ exports.run = async (client, env) => {
           
     }
   
-    client.on('message', message => {
+    client.on('message', async message => {
       
         if(message.author.bot) return;
 
