@@ -68,9 +68,10 @@ exports.run = async (client, env) => {
 
           let i = 0
           
-          WebhookIDs.forEach(w =>{
-            let WebhooksClient = new Discord.WebhookClient(w, WebhookTokens[i]);
-            webhooksend(message, WebhooksClient, url)
+          ChanneIDs.forEach(w =>{
+            const webhooks = await client.channels.cache.get(ChanneIDs[i]).fetchWebhooks();
+		    const webhook = webhooks.first();
+            webhooksend(message, webhook, url)
             i++
           })
         }
@@ -78,3 +79,7 @@ exports.run = async (client, env) => {
       })
     })
 }
+
+/*
+    
+    webhook.send("test")*/
