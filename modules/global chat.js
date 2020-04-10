@@ -20,7 +20,7 @@ exports.run = async (client, env) => {
           }
     }
   
-    client.on('message', async message => {
+    client.on('message', async (message) => {
 
         if(message.author.bot) return;
 
@@ -41,7 +41,7 @@ exports.run = async (client, env) => {
         
       console.log(ChanneIDs)
       
-      ChanneIDs.forEach(c =>{
+      ChanneIDs.forEach(c => {
         if(message.channel.id == c){
             message.delete()
             if(message.content.includes('@everyone')) return
@@ -66,7 +66,7 @@ exports.run = async (client, env) => {
           let i = 0
           
           ChanneIDs.forEach(w =>{
-            const webhooks = client.channels.cache.get(ChanneIDs[i]).fetchWebhooks();
+            const webhooks = await client.channels.cache.get(ChanneIDs[i]).fetchWebhooks();
 		    const webhook = webhooks.first();
             webhooksend(message, webhook, url)
             i++
