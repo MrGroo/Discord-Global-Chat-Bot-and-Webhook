@@ -66,7 +66,7 @@ exports.run = async (client, env) => {
           let i = 0
           
           ChanneIDs.forEach(w =>{
-            const webhooks = client.channels.cache.get(ChanneIDs[i]).fetchWebhooks().than(w=>{webhooksend(message, w.first(), url)})
+            const webhooks = client.channels.cache.get(ChanneIDs[i]).fetchWebhooks().than(w=>{console.log(w);webhooksend(message, w.first(), url)})
 		    //const webhook = webhooks.first();
             
             i++
