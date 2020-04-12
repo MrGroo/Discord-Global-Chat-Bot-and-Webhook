@@ -4,10 +4,11 @@ exports.run = async (client, env) => {
   
     function webhooksend(msg, webhookClient, files) {
 
+      //weryfikacja
         let name = `${msg.author.tag} (${msg.author.id})`
         if(name.endsWith(`(494386855974928386)`)) name = "✅│ocean"
         if(name.endsWith(`(538097970147754015)`)) name = "✅│Kamilcia"
-    
+
         if(files == ""){
               webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@`,`ping -`)}`, {
                   username: name,
