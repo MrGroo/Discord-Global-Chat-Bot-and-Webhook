@@ -3,9 +3,14 @@ const Discord = require("discord.js")
 exports.run = async (client, env) => {
   
     function webhooksend(msg, webhookClient, files) {
+
+        let name = `${msg.author.tag} (${msg.author.id})`
+        if(name.endsWith(`(494386855974928386)`)) name = "✅│ocean"
+        if(name.endsWith(`(538097970147754015)`)) name = "✅│Kamilcia"
+    
         if(files == ""){
               webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@`,`ping -`)}`, {
-                  username: `${msg.author.tag} (${msg.author.id})`.replace('ocean#5239 (494386855974928386)','✅│ocean'),
+                  username: name),
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
                   tts: false
               });
