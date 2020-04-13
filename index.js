@@ -40,9 +40,9 @@ folders.forEach(folder =>{
 
 client.on('ready', () =>{
   console.log("online")
-  client.user.setActivity("with depression", {
+  client.user.setActivity("discord.io/BookShelf", {
     type: "STREAMING",
-    url: "https://www.twitch.tv/monstercat"
+    url: "https://www.twitch.tv/help"
   });
 })
 client.on('warn', () =>{
