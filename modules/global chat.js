@@ -21,7 +21,7 @@ exports.run = async (client, env) => {
           }
           else{
               webhookClient.send(`${msg.content}`, {
-                  username: `${msg.author.tag} (${msg.author.id})`,
+                  username: name,
                   avatarURL: `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}`,
                   files: [files],
                   tts: false
