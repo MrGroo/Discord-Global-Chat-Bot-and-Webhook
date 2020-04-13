@@ -40,11 +40,10 @@ folders.forEach(folder =>{
 
 client.on('ready', () =>{
   console.log("online")
-  bot.user.setPresence({
-    game: {
-        name: 'discord.io/BookShelf',
-        type: "STREAMING"
-  }})
+  client.user.setActivity("with depression", {
+    type: "STREAMING",
+    url: "https://www.twitch.tv/monstercat"
+  });
 })
 client.on('warn', () =>{
     console.log("warn")
