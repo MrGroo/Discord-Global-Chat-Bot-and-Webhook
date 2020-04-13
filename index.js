@@ -43,8 +43,8 @@ client.on('ready', () =>{/*
   client.user.setActivity("discord.io/BookShelf", {
     type: "STREAMING",
     url: "https://www.twitch.tv/help"
-  });
-  client.user.setPresence({ activity: { name: 'discord.io/BookShelf' }, status: 'idle' })*/
+  });*/
+  client.user.setPresence({ activity: { name: 'discord.io/BookShelf' }, status: 'idle' })
 })
 
 
