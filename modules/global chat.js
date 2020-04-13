@@ -12,7 +12,6 @@ exports.run = async (client, env) => {
         if(name.endsWith(`(257954238339088384)`)) name = "🔴│m7rlin"
         if(name.endsWith(`(672786344367620106)`)) name = "🔴│Studziak"
 
-
         if(files == ""){
               webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@`,`ping -`)}`, {
                   username: name,
