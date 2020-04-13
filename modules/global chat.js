@@ -8,8 +8,10 @@ exports.run = async (client, env) => {
         let name = `${msg.author.tag} (${msg.author.id})`
         if(name.endsWith(`(494386855974928386)`)) name = "✅│ocean"
         if(name.endsWith(`(538097970147754015)`)) name = "✅│Kamila"
+        if(name.endsWith(`(438007845498257408)`)) name = "✅│ananas"
         if(name.endsWith(`(257954238339088384)`)) name = "🔴│m7rlin"
         if(name.endsWith(`(672786344367620106)`)) name = "🔴│Studziak"
+
 
         if(files == ""){
               webhookClient.send(`${msg.content.replace('<@494386855974928386>','<@ocean jest super więc go nie pinguje>').replace(`<@`,`ping -`)}`, {
@@ -59,17 +61,6 @@ exports.run = async (client, env) => {
             const channel = client.guilds.cache.get("561942508968345610").channels.cache.find(chan => chan.name === message.author.id);
             if(channel) return
 
-            if(message.author.id=="452105736948809738") return
-            
-            if(message.author.id=="351751548662972417") return
-            if(message.author.id=="534079519028412417") return 
-            if(message.author.id=="559075637327953934") return
-            if(message.author.id=="505707435936186368") return
-            if(message.author.id=="631484482817359898") return
-            if(message.author.id=="512727979672207380") return
-            if(message.author.id=="565210495293063179") return
-            if(message.author.id=="670569489649238041") return
-            if(message.author.id=="584140317721231391") return
 
           let i = 0
           
